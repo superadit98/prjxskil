@@ -1,0 +1,29 @@
+{
+  "summary": {
+    "total_trades": 0,
+    "winning_trades": 0,
+    "losing_trades": 0,
+    "win_rate": null,
+    "total_pnl": 0,
+    "total_fees_earned": 0,
+    "total_il": 0,
+    "avg_trade_duration": null
+  },
+  "by_pool": {},
+  "timeline": [],
+  "learning_progress": {
+    "start": {
+      "win_rate": null,
+      "confidence": 0.50
+    },
+    "current": {
+      "win_rate": null,
+      "confidence": 0.50
+    }
+  },
+  "metadata": {
+    "created": "2024-01-15T00:00:00Z",
+    "version": "1.0.0",
+    "description": "PRJX Liquidity Manager - Performance Metrics"
+  }
+}

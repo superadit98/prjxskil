@@ -1,0 +1,72 @@
+{
+  "pools": {
+    "HYPE/USD₮0": {
+      "characteristics": {
+        "avg_volatility": null,
+        "typical_apr": null,
+        "best_range_width": null,
+        "correlation": null,
+        "liquidity_depth": null
+      },
+      "learned_behaviors": [],
+      "optimal_settings": {
+        "entry_confidence_threshold": 0.70,
+        "range_multiplier": 1.0,
+        "rebalance_frequency": "daily"
+      },
+      "performance_history": {
+        "total_trades": 0,
+        "win_rate": null,
+        "avg_pnl": null,
+        "max_il_seen": null
+      }
+    },
+    "HYPE/kHYPE": {
+      "characteristics": {
+        "avg_volatility": null,
+        "typical_apr": null,
+        "best_range_width": null,
+        "correlation": null,
+        "liquidity_depth": null
+      },
+      "learned_behaviors": [],
+      "optimal_settings": {
+        "entry_confidence_threshold": 0.70,
+        "range_multiplier": 1.2,
+        "rebalance_frequency": "every_2_days"
+      },
+      "performance_history": {
+        "total_trades": 0,
+        "win_rate": null,
+        "avg_pnl": null,
+        "max_il_seen": null
+      }
+    },
+    "HYPE/UBTC": {
+      "characteristics": {
+        "avg_volatility": null,
+        "typical_apr": null,
+        "best_range_width": null,
+        "correlation": null,
+        "liquidity_depth": null
+      },
+      "learned_behaviors": [],
+      "optimal_settings": {
+        "entry_confidence_threshold": 0.70,
+        "range_multiplier": 1.5,
+        "rebalance_frequency": "daily"
+      },
+      "performance_history": {
+        "total_trades": 0,
+        "win_rate": null,
+        "avg_pnl": null,
+        "max_il_seen": null
+      }
+    }
+  },
+  "metadata": {
+    "created": "2024-01-15T00:00:00Z",
+    "version": "1.0.0",
+    "description": "PRJX Liquidity Manager - Pool Knowledge Base"
+  }
+}
