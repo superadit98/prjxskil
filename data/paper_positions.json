@@ -1,0 +1,21 @@
+{
+  "paper_trading": {
+    "enabled": true,
+    "start_date": "2024-01-15T00:00:00Z",
+    "virtual_capital": {
+      "initial_balance": 10000.00,
+      "current_balance": 10000.00,
+      "currency": "USD"
+    }
+  },
+  "positions": [],
+  "trade_history": [],
+  "statistics": {
+    "total_trades": 0,
+    "winning_trades": 0,
+    "losing_trades": 0,
+    "total_pnl": 0,
+    "total_fees_earned": 0,
+    "total_il": 0
+  }
+}
