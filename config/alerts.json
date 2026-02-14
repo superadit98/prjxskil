@@ -1,0 +1,89 @@
+{
+  "alert_channels": {
+    "telegram": {
+      "enabled": true,
+      "bot_token": "${TELEGRAM_BOT_TOKEN}",
+      "chat_id": "${TELEGRAM_CHAT_ID}",
+      "parse_mode": "Markdown"
+    },
+    "whatsapp": {
+      "enabled": false,
+      "phone_number": ""
+    },
+    "discord": {
+      "enabled": false,
+      "webhook_url": ""
+    },
+    "email": {
+      "enabled": false,
+      "smtp_server": "",
+      "recipient": ""
+    }
+  },
+
+  "alert_rules": {
+    "position_health": {
+      "enabled": true,
+      "thresholds": {
+        "fair": 70,
+        "poor": 50,
+        "critical": 30
+      },
+      "check_interval_seconds": 60
+    },
+
+    "price_movement": {
+      "enabled": true,
+      "thresholds": {
+        "hourly": 5,
+        "daily": 10,
+        "weekly": 20
+      },
+      "check_interval_seconds": 60
+    },
+
+    "impermanent_loss": {
+      "enabled": true,
+      "thresholds": {
+        "warning": 5,
+        "alert": 10,
+        "critical": 15
+      },
+      "check_interval_seconds": 300
+    },
+
+    "range_status": {
+      "enabled": true,
+      "notify_on_exit": true,
+      "notify_on_reentry": true,
+      "distance_alert_percent": 2
+    },
+
+    "take_profit": {
+      "enabled": true,
+      "notify_on_trigger": true,
+      "notify_on_execute": true
+    },
+
+    "stop_loss": {
+      "enabled": true,
+      "notify_on_trigger": true,
+      "notify_on_execute": true,
+      "priority": "CRITICAL"
+    }
+  },
+
+  "quiet_hours": {
+    "enabled": true,
+    "start": "23:00",
+    "end": "07:00",
+    "timezone": "Asia/Jakarta",
+    "critical_override": true
+  },
+
+  "rate_limits": {
+    "max_alerts_per_hour": 10,
+    "min_seconds_between_alerts": 60,
+    "burst_allowance": 3
+  }
+}

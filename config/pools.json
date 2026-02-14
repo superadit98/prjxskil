@@ -1,0 +1,51 @@
+{
+  "monitored_pools": [
+    {
+      "id": "HYPE_USDT",
+      "name": "HYPE/USD₮0",
+      "token0": "HYPE",
+      "token1": "USD₮0",
+      "fee_tier": 0.003,
+      "priority": "HIGH",
+      "min_tvl": 1000000,
+      "strategies": ["fee_harvester", "trend_follower"],
+      "risk_level": "MEDIUM"
+    },
+    {
+      "id": "HYPE_kHYPE",
+      "name": "HYPE/kHYPE",
+      "token0": "HYPE",
+      "token1": "kHYPE",
+      "fee_tier": 0.003,
+      "priority": "HIGH",
+      "min_tvl": 500000,
+      "strategies": ["fee_harvester", "wide_range"],
+      "risk_level": "LOW",
+      "notes": "Correlated pair - low IL risk"
+    },
+    {
+      "id": "HYPE_UBTC",
+      "name": "HYPE/UBTC",
+      "token0": "HYPE",
+      "token1": "UBTC",
+      "fee_tier": 0.003,
+      "priority": "MEDIUM",
+      "min_tvl": 500000,
+      "strategies": ["trend_follower", "wide_range"],
+      "risk_level": "HIGH",
+      "notes": "Volatile pair - use caution"
+    }
+  ],
+  "data_sources": {
+    "primary": "https://www.prjx.com/liquidity",
+    "price_feeds": [
+      "https://api.dexscreener.com/latest/dex",
+      "https://api.coingecko.com/api/v3"
+    ],
+    "on_chain": {
+      "rpc": "https://rpc.hyperevm.org",
+      "chain_id": 999
+    }
+  },
+  "update_interval_seconds": 30
+}
